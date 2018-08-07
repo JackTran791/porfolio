@@ -1,73 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main_2.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+    <link rel="icon" href="favicon.ico" type="img/x-icon">
+
     <title>Welcome To My Portfolio</title>
 </head>
+
 <body id="bg-img">
     <header>
+        <div class="header-logo" style="top: 50px">
+            <a class="site-logo" href="index.html">
+                <img src="img/logo.png" alt="Homepage">
+            </a>
+        </div>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
         <nav class="menu">
-                <div class="menu-branding">
-                    <div class="portrait">
+            <div class="menu-branding">
+                <div class="portrait">
 
-                    </div>
                 </div>
-                <ul class="menu-nav">
-                    <li class="nav-item current">
-                        <a href="index.html" class="nav-link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link">
-                            Work
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main id="home">
-        <h1 class="lg-heading">
-            Jack <span class="text-secondary">Tran</span>
-        </h1>
-        <h2 class="sm-heading">
-            Web Developer, Programmmer, Designer, & Entrepreneur
-        </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
+    <div id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="img/hero-bg.jpg" data-natural-width=3000
+        data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello There</h3>
+
+                <h1>
+                    I am Jack Tran.
+                    <br> I am a FrontEnd Developer & UI/UX
+                    <br> designer based in Houston.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="work.html" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="about.html" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
+
+            </div>
+
         </div>
-    </main>
+        <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="#">
+                    <i class="im im-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="im im-twitter" aria-hidden="true"></i>
+                    <span>Twiiter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="im im-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="im im-behance" aria-hidden="true"></i>
+                    <span>Behance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="im im-pinterest" aria-hidden="true"></i>
+                    <span>Pinterest</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+    </div>
+    <!-- end s-home -->
     <script src="js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main_2.js"></script>
 </body>
+
 </html>

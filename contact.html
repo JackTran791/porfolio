@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main_2.css">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+    <link rel="icon" href="favicon.ico" type="img/x-icon">
     <title>Contact Me</title>
 </head>
+
 <body>
     <header>
         <div class="menu-btn">
@@ -17,57 +28,131 @@
             <div class="btn-line"></div>
         </div>
         <nav class="menu">
-                <div class="menu-branding">
-                    <div class="portrait">
+            <div class="menu-branding">
+                <div class="portrait">
 
-                    </div>
                 </div>
-                <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link">
-                            Work
-                        </a>
-                    </li>
-                    <li class="nav-item current">
-                        <a href="contact.html" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main id="about">
-        <h1 class="lg-heading">
-            Contact <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            This is how you can reach me...
-        </h2>
-        <div class="boxes">
-           <div>
-                <span class="text-secondary">Email:</span> congsonit@gmail.com
-           </div>
-           <div>
-                <span class="text-secondary">Phone:</span> (832) 951-6415
-           </div>
-           <div>
-                <span class="text-secondary">Addess:</span> 9715 Woody Oaks Dr, Houston, TX 77095
-           </div>
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello.</h1>
+
+                <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint
+                    fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            </div>
         </div>
-    </main>
+
+        <div class="row contact__main">
+            <div class="col-eight tab-full contact__form">
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true"
+                                class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true"
+                                class="full-width"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button class="full-width btn--primary">Submit</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div>
+
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!
+                    <br>
+                </div>
+
+            </div>
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Phone</h4>
+                <p>Phone: (+63) 555 1212
+                    <br> Mobile: (+63) 555 0100
+                    <br> Fax: (+63) 555 0101
+                </p>
+
+                <h4 class="h06">Email</h4>
+                <p>someone@holawebsite.com
+                    <br> info@holawebsite.com
+                </p>
+
+                <h4 class="h06">Address</h4>
+                <p>
+                    1600 Amphitheatre Parkway
+                    <br> Mountain View, CA
+                    <br> 94043 US
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end s-contact -->
     <footer id="main-footer">
         Copyright &copy; 2018
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main_2.js"></script>
 </body>
+
 </html>
