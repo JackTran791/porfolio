@@ -2199,10 +2199,11 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-about {
-    padding-top: 12rem;
+    padding-top: 7rem;
     padding-bottom: 0.5rem;
     background-color: #FFFFFF;
     position: relative;
+    min-height: calc(100vh - 90px);
 }
 
 .about-content {
@@ -3309,6 +3310,7 @@ footer {
     padding: 0.2rem 0 0.2rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.2);
+    height: 90px;
 }
 
 footer a, footer a:visited {
