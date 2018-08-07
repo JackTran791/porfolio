@@ -8,11 +8,13 @@
 body {
     @include background();
     background: $primary-color;
-    color: set-text-color($primary-color);
+    font-family: "librebaskerville-regular", serif;
+    font-size: 1.6rem;
+    color: #333;
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    padding: 0;
+    line-height: 1.875;
 }
 
 // Heading
@@ -181,12 +183,12 @@ main {
     color: #333;
 }
 
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-}
+// #main-footer {
+//     text-align: center;
+//     padding: 1rem;
+//     background: darken($primary-color, 10);
+//     color: set-text-color($primary-color);
+//     height: 60px;
+// }
 
 @import 'mobile';
