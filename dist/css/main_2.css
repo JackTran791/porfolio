@@ -2472,6 +2472,7 @@ html.no-csstransitions .home-content__main {
     text-transform: uppercase;
     letter-spacing: .2rem;
     margin: 0;
+    opacity: 0.3;
 }
 
 .item-folio__cat {
