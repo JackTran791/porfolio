@@ -54,7 +54,7 @@
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 250px;
-      height: 250px;
+      height: 350px;
       background: url("../img/profile_large.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
@@ -108,7 +108,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -241,11 +241,13 @@ main {
   .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
-  ul.menu-nav, div.menu-branding {
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0; }
-    ul.menu-nav.show, div.menu-branding.show {
+    ul.menu-nav.show,
+    div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu0nav {
     height: 75vh;
@@ -257,9 +259,9 @@ main {
     .menu-branding .portrait {
       background: url("../img/profile.jpg");
       width: 150px;
-      height: 150px; }
+      height: 200px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
